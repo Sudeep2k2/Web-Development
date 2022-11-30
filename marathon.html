@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+<body>
+    <form action="/registration">
+        <h1>Race Registration!</h1>
+        <p>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" required>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" required>
+        </p>
+        <!--For radio buttons, all radio buttons should have same value in their name attribute and the value attribute must differ-->
+        <p>
+            Select a Race:
+            <br>
+            <br>
+            <input type="radio" id="fr5k" name="race" value="funrun">
+            <label for="fr5k">Fun Run 5k</label>
+        </p>
+        <p>
+            <input type="radio" id="hm" name="race" value="half">
+            <!--ID should not start with number-->
+            <label for="hm">Half Marathon</label>
+        </p>
+        <p>
+            <!--We can type input:type_of_input to get the full input tag-->
+            <!--For example input:password is same as typing the below line-->
+            <input type="radio" id="fm" name="race" value="full">
+            <label for="fm">Full Marathon</label>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="e-mail">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="password" required>
+        </p>
+        <p>
+            <label for="age">Select Age Group</label>
+            <select name="agegroup" id="age">
+                <option value="">Select an option</option>
+                <option value="below18">under 18</option>
+                <option value="18--35">18--35</option>
+                <option value="35--50">35--50</option>
+                <option value="above50">over 50</option>
+            </select>
+        </p>
+        <button type="submit">Register!</button>
+    </form>
+</body>
+</html>

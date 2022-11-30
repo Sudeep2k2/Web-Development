@@ -1,0 +1,22 @@
+h3{
+    color:indigo;
+    background-color : black; 
+}
+
+button{
+    color: yellow;
+    background-color : red;
+}
+/*Background is different from Background color*/
+/*This is selecting background color using rgb and color using hexadecimal code. This can be got from google by typing Color picker*/
+p{
+    color : #F84206;
+    background-color : rgb(15,27,229);
+}
+body{
+    background-color : #cceeff;
+}
+/*The above comment can also be written as :
+ body{
+    background-color : #cef; This is because even it u write a 6 digit code in 3 digit format 
+} */ 

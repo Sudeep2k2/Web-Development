@@ -1,0 +1,90 @@
+body 
+{
+    margin: 0px;
+}
+
+h1
+{
+    margin : 10px 10px;
+}
+
+div 
+{
+    width: 500px;
+    background-color: aqua;
+}
+h1
+{
+    background-color: chartreuse;
+    width: 300px;
+}
+
+#one 
+{
+    background-color: blanchedalmond;    
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* The below line is used to bring down the box size to the same width as it was before using the border ie 200px */
+    box-sizing:border-box;
+    /* Border Radius is given either in px or in % */
+    border-radius: 20px 100px / 120px;
+}
+
+#two
+{
+    background-color: cornsilk;
+    border-width: 5px;
+    border-color: darkblue;
+    border-left-color: green;
+    border-style: solid dashed dotted inset;
+    /* The above line uses multiple border-styles into the same div . It goes in the order of top->right->bottom->left */
+}
+
+#three
+{
+    background-color: gray;
+    border-width: 5px;
+    border-color: magenta;
+    border-style: inset;
+}
+#three:hover
+{
+    background-color: magenta;
+    border-color: gray;
+}
+
+#four
+{
+    background-color:darkseagreen;
+    border: 5px solid darkred;
+    /* General form for this is  border : width style color */
+    margin : 10px; 
+    margin-left : 0px;
+}
+
+#bt
+{
+    font-weight:bold;
+    background-color: blue;
+    color : white ;
+    border : 10px solid blue;
+    border-radius: 5px;
+    padding : 1px 1px 1px 1px;
+}
+
+#bt:hover
+{
+    background-color:white;
+    color:blue;
+
+}
+
+
+/*
+ TYPES OF SHORT-HAND PADDING : 
+    1) padding : value; => Applies to all 4 sides 
+    2) padding : value1 value2; => Applies to vertical and horizontal sides
+    3) padding : value1 value2 value3 => Applies to top, horizontal and bottom sides
+    4) padding : value1 value2 value3 value4 => Applies to top, right, bottom, left sides
+*/

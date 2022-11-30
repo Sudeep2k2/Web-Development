@@ -1,0 +1,120 @@
+span
+{
+    background-color: palevioletred;
+    width : 200px; /* Width and height is not applied in case of span elements because it is inline */
+    border : 5px solid red;
+    padding: 10px;
+    margin: 2px;
+    /* Since it is an inline element, here the spaces are not considered like it is considered for a block */
+    /* h1 can also be made into block using the below command */
+    /* display : block; */
+}
+
+h1
+{
+    background-color: palegoldenrod;
+    width : 200px; /* Width and height is not applied in case of span elements because it is inline */
+    border : 5px solid darkred;
+    padding: 10px;
+    margin: 2px;
+    /* This is used to hide an element */
+    display: none;
+    /* Since it is an block element, here the spaces are considered */
+    /* h1 can also be made into inline using the below command */
+    /* display : inline; */
+}
+
+#d1, #d2, #d3
+{
+    width: 200px;
+    height : 200px;
+    background-color: darkorange;
+    border: 5px dashed red;
+    margin: 20px;   
+    display : inline-block;
+    transition: background-color 1s 1s, border-radius 2s 1s;
+    /*
+    If we want to change all properties, then we write it as : 
+    transition : all     time      delay;
+    */
+    /*
+        Single line General Form for transition : 
+        transition : property_name    duration    timing_function    delay
+    */    
+}
+
+/* #d2
+{
+    width: 200px;
+    height : 200px;
+    background-color: darkorange;
+    border: 5px dashed red;
+    margin: 20px;   
+    display : inline-block;
+} */
+
+/* #d3
+{
+    width: 200px;
+    height : 200px;
+    background-color: darkorange;
+    border: 5px dashed red;
+    margin: 20px;   
+    display : inline-block;
+} */
+
+
+/* section 
+{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+} */
+
+/* div
+{
+    background-color: aliceblue;
+    width: 50%;
+    height: 50%;
+    margin: 50px 50px 50px 50px;
+} */
+
+#d1:hover 
+{
+    background-color: yellow;
+    border: 5px solid magenta;
+    border-radius: 50%;
+}
+
+section div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div
+{
+    margin-left: 500px;
+}
+
+div:nth-of-type(1)
+{
+    transition-timing-function: ease-in;    
+}
+
+div:nth-of-type(2)
+{
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3)
+{
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}
+
+div:nth-of-type(4)
+{
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}

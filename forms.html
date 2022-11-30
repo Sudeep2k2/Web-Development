@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Forms</h1>
+    <form action = "/tacos">
+            <p>
+                <label for = "username">Enter a username : </label>
+                <input id = "username" type = "text" placeholder = "Username" name = "username">
+            </p>
+            <!--Username field with restrictions and required-->
+            <p>
+                <label for = "username">Enter a username : </label>
+                <input id = "username" type = "text" placeholder = "Username" name = "username" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for = "password">Enter a password : </label>
+                <input type = "password" placeholder = "Password" id = "password" name = "password"> 
+            </p>
+            <p>
+                <label for = "email_id">Enter an email : </label>
+                <input id = "email_id" type = "email" placeholder = "E-Mail" name = "email" maxlength="20" required>
+            </p>
+            <p>
+                <label for = "color">Choose a color : </label>
+                <input type = "color" id = "color" name = "color">
+            </p>
+            <p>
+                <label for = "date">Choose a  Date : </label>
+                <input type = "date" id = "date" name = "date">
+            </p>
+            <p>
+                <label for = "url"> Enter a URL : </label>
+                <input type = "url" id = "url" name = "url">
+            </p>
+            <!--When the attribute type is button instead of submit, the button does not redirect to another page-->
+            <button type = "button">Won't submit</button>
+            <!--Label can be nested as shown below-->
+            <p>
+                <label>Choose a number : 
+                    <!--If we want the least and highest value to be selected, use min and max & if we want it to skip by some numbers, use the step attribute-->
+                    <input type = "number" name = "numb" min="1" max="10000" step="2"> <!--It displays only odd numbers-->
+                    <input type = "number" name = "numb" min="0" max="10000" step="2"><!--It displays only even numbers-->
+                </label>
+            </p>
+            <!--tHE ATTRIBUTE VALUE SHOWS WHAT TEXT HAS TO BE DISPLAYED INSIDE THE BUTTON -->
+            <input type = "Submit" value = "Click here!">
+            <button>Click here to submit</button>
+    </form>
+    <h3>Hijacking search</h3>
+    <!--The name attribute in the below tags must match the name in that particular website-->
+    <h5>Google search</h5>
+    <form action = "https://www.google.com/search">
+        <input type = "text" name = "q">
+        <button>Search google</button>
+    </form>
+    <h5>YouTube search</h5>
+    <form action = "https://www.youtube.com/results">
+        <input type="text" name = "search_query">
+        <button>Search Youtube</button>
+    </form>
+    <h3>More inputs</h3>
+    <form action = "/birds">
+        <input type = "checkbox" name = "agree_toc" id = "agree">
+        <label for = "agree">I agree to all the terms of condition</label>
+        <button type="submit">SUBMIT</button> 
+    </form>
+    <form action = "/size">
+        <p>
+            <input type = "radio" name = "size" id = "xs" value = "xs">
+            <label for = "xs">XS</label>
+            <input type = "radio" name = "size" id = "s" value = "s">
+            <label for = "s">S</label>
+            <input type = "radio" name = "size" id = "m" value = "m">
+            <label for = "m">M</label>
+            <input type = "radio" name = "size" id = "l" value = "l">
+            <label for = "l">L</label>
+        </p>
+        <p>
+            <label for="subjects">Select the subject needed : </label>
+            <select name = "subject" id = "subjects">
+                    <option value = "">Select an option :</option>
+                    <option value = "Maths">Maths</option>
+                    <option value = "Science">Science</option>
+                    <!--If we want an option pre-selected, then we have to write the keyword "selected" after the value attribute -->
+                    <option value = "English" selected>English </option>
+                    <option value = "Business">Business</option>
+                    <button type = "submit">Click here to submit!</button>
+            </select>
+        </p>    
+        <p>
+            <label for="v">Select the volume required : </label>
+            <input type = "range" min="1"  max="10" value="5" name="Volume_range" id="v">
+            <button type="submit">Submit here</button>
+        </p>
+        <p>
+            <label for="ta">Give your feedbacks here :</label>
+            <br>
+            <textarea id="ta" rows="5" cols="10" placeholder = "Type something here!" name="feedbacks"> 
+            </textarea>
+            <button type="submit">SUbmit</button>
+        </p>
+    </form>
+    <hr>
+    <button>Outside the form</button>
+</body>
+</html>  

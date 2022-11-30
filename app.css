@@ -1,0 +1,114 @@
+footer .li{
+    color : white;
+    background-color: yellow;
+}
+/* + is the adjacent selector*/
+h2 + button{
+    color : green;
+    background-color: blue ;
+}
+
+body{
+    color: blue;
+    background-color: black;
+    text-decoration: red underline wavy;
+}
+h1{
+    text-align: center;
+    text-decoration:overline;
+    font-size: 100px;
+    font-family: Impact, Arial;
+}
+p,div{
+    font-weight: 900;
+    color: maroon;
+    }
+    h2 +  button{
+        color : green;
+        background-color: blue ;
+    }
+
+a 
+{
+    font-weight : 700;
+    text-decoration: none;
+}
+
+/* # is used as an ID selector*/
+#b1
+{
+    background-color: pink;
+    color : darkblue;
+}
+/* . is used as a class selector*/
+.tag
+{
+    background-color :  whitesmoke;
+    color : red;
+    font-size: 50px;                                 
+}
+/* This can be done in another way like span[class="tag"] {CHANGES}  */
+/* Also if there are multiple classes with same name as tag and we only want to select the one in span, then we write it as span.tag*/
+
+/* > is the direct descendant selector*/
+footer > a{
+    background-color: purple;
+    color:aquamarine; 
+}
+
+
+
+/* [] is used for attribute selector*/
+input[type="password"]
+{
+    color:white;
+    background-color: brown;
+}
+/* NOTE : THERE IS NO SPACE BETWEEN input and []  */
+
+button:hover
+{
+    background-color: black;
+    color: white;
+}
+
+#b1:hover
+{
+    color : pink;
+    background-color: black;
+}
+
+/* Using hover for only a particular class */
+.li button:hover
+{
+    color : yellow;
+    background-color: rgb(255, 165, 0);
+}
+
+.hbd:nth-of-type(2n)
+{
+    background-color: grey ;
+}
+
+/* Pseudo elements lets us select a particular part of the entire document */
+p::first-line{
+    color: darkorange;
+}
+
+p::selection{
+    background-color: white;
+}
+
+
+/* Specificity : !important > INLINE SELECTORS > ID SELECTOR > CLASS SELECTOR > ELEMENT SELECTOR */
+/* BUT the IMPORTANT SELECTOR AND THE INLINE SELECTORS ARE LEAST USED */
+
+
+/*
+For CSS Inheritance 
+
+SELECTOR 
+{
+    PROPERTY : inherit;
+}
+*/
