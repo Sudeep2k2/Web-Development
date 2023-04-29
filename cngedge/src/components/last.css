@@ -1,0 +1,150 @@
+/* .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .subhead{
+    display: flex;
+    align-items: center;
+} */
+
+.last{
+    background-color:  #F9F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.advele{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.adv{
+    display: flex;    
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:  #DBE2EF;
+    padding: 10px;
+    color: #335f95;
+    width: 80%;
+    border-radius: 25px;
+    height: auto;
+    margin: 2% 10%;
+}
+
+.adv h1{
+    font-size: 50px;
+}
+
+.safety{
+    font-weight: 600;
+    font-size: 20px;
+    background-color:  #DBE2EF;
+    padding: 20px 20px 20px 20px;
+    color: #335f95;
+    width: 80%;
+    border-radius: 25px;
+    height: auto;
+    margin: 2% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.safety h2{
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+    font-size: 40px;
+    /* text-align: center; */
+}
+
+.safetytail img{
+    height: 200px;
+}
+
+.savings{
+    font-weight: 600;
+    font-size: 20px;
+    background-color:  #DBE2EF;
+    padding: 20px 20px 20px 20px;
+    color: #335f95;
+    width: 80%;
+    border-radius: 25px;
+    height: auto;
+    margin: 2% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.savehead{
+    display: flex;
+    align-items: center important;
+    /* justify-content: center; */
+}
+
+.savehead img{
+    height: 60px;
+}
+
+.savehead h2{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.savingtail img{
+    height: 200px;
+}
+
+.caution{
+    font-weight: 600;
+    font-size: 20px;
+    background-color:  #DBE2EF;
+    padding: 20px 20px 20px 20px;
+    color: #335f95;
+    width: 80%;
+    border-radius: 25px;
+    height: auto;
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cautionhead{
+    display: flex;
+    align-items: center important;
+    /* justify-content: center; */
+}
+
+.cautionhead img{
+    height: 50px;
+    padding-left: 10px;
+}
+
+.cautionhead h2{
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+
+/* .trio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2% 10%;
+} */
+
+.cautiontail img{
+    height: 200px;
+}

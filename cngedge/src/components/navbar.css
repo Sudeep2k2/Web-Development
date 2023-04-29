@@ -1,0 +1,56 @@
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #112D4E;
+    color: aliceblue;
+}
+
+.logo{
+    padding-left: 10px;    
+}
+
+.middle ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.middle li{
+    list-style: none;
+}
+
+.middle ul:hover > :not(:hover){
+    opacity: 0.5;
+}
+
+.middle li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+.mailing img{
+    height: 60px;
+    width: 60px;
+}
+
+.mailing{
+    padding-right: 10px;
+}

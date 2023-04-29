@@ -1,0 +1,35 @@
+.head{
+    font-weight: 600;
+}
+
+.contactus{
+    background-color: #F9F7F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.minicontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:  #DBE2EF;
+    padding: 10px;
+    color: #335f95;
+    width: 80%;
+    border-radius: 25px;
+    height: auto;
+    margin: 2% 10%;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    height: 200px;
+}
+
+.boxes input{
+    height: 25px;
+}
