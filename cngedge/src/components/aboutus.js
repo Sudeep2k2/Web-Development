@@ -49,7 +49,9 @@ export default function about() {
                     </div>
                 </div>
                 <div className="images">
-                    <img className="first" src={phone} alt="Phone"></img>
+                    <a href="tel:8508095535">
+                        <img className="first" src={phone} alt="Phone"></img>
+                    </a>
                     <img className="second" src={mail} alt="Mail"></img>
                 </div>
             </div>
